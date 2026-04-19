@@ -102,18 +102,20 @@ function ArcIcon({
         borderColor: platform.accent,
         color: platform.id === "instagram" ? "#0b0b0f" : "#f8f8ff",
         background:
-          platform.id === "tiktok"
-            ? "#0b0b0f"
-            : platform.id === "twitch"
-              ? "rgba(145,70,255,0.18)"
-              : "rgba(255,255,255,0.06)",
+          platform.id === "instagram"
+            ? "rgba(255,255,255,0.92)"
+            : platform.id === "tiktok"
+              ? "#0b0b0f"
+              : platform.id === "twitch"
+                ? "rgba(145,70,255,0.22)"
+                : "rgba(255,255,255,0.06)",
         x,
         rotate,
         scale: dimOthers ? 0.85 : 1,
         opacity: dimOthers ? 0.35 : 1,
         filter: dimOthers ? "blur(1.5px)" : "blur(0px)",
       }}
-      whileHover={{ scale: 1.12 }}
+      whileHover={{ scale: 1.18 }}
       whileTap={{ scale: 0.96 }}
       transition={{ type: "spring", stiffness: 380, damping: 22 }}
       onClick={onSelect}
